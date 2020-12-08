@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>The Internet</title>
+    <!-- Bootstrap -->
+	<link href="../../css/bootstrap-4.3.1.css" rel="stylesheet">
+	<!-- Internal CSS -->
+	<style>
+		.hero-image{
+			background: linear-gradient(0deg, rgba(44, 44, 44, 0.5), rgba(44, 44, 44, 0.5)), url("Imgs/earth.jpg"); 
+			background-position: center; 
+			background-repeat: no-repeat; 
+			background-size: cover;
+		}
+		#home{
+			color: white;
+		}
+		
+		.circle {
+		  padding: 25px;
+		  border-radius: 50%;
+		  background-color: #0085FF;
+		  color: #fff;
+		  z-index: 2;
+		}
+
+		.how-it-works.row .col-2 {
+		  align-self: stretch;
+		}
+		.how-it-works.row .col-2::after {
+		  content: "";
+		  position: absolute;
+		  border-left: 3px solid #0085FF;
+		  z-index: 1;
+		}
+		.how-it-works.row .col-2.bottom::after {
+		  height: 50%;
+		  left: 50%;
+		  top: 50%;
+		}
+		.how-it-works.row .col-2.full::after {
+		  height: 100%;
+		  left: calc(50% - 3px);
+		}
+		.how-it-works.row .col-2.full-left::after {
+
+			height: 100%;
+
+			left: 50%;
+		}
+		.how-it-works.row .col-2.top::after {
+		  height: 50%;
+		  left: calc(50% - 3px);
+		  top: 0;
+		}
+
+		.timeline div {
+		  padding: 0;
+		  height: 40px;
+		}
+		.timeline hr {
+		  border-top: 3px solid #0085FF;
+		  margin: 0;
+		  top: 17px;
+		  position: relative;
+		}
+		.timeline .col-2 {
+		  display: flex;
+		  overflow: hidden;
+		}
+		.timeline .corner {
+		  border: 3px solid #0085FF;
+		  width: 100%;
+		  position: relative;
+		  border-radius: 15px;
+		}
+		.timeline .top-right {
+		  left: 50%;
+		  top: -50% ;
+		}
+		.timeline .left-bottom {
+		  left: -50%;
+		  top: calc(50% - 3px);
+		}
+		.timeline .top-left {
+		  left: -50%;
+		  top: -50% ;
+		}
+		.timeline .right-bottom {
+		  left: 50%;
+		  top: calc(50% - 3px);
+		}
+	</style>
+	
+  </head>
+  <body>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+		<div class="container"> <a class="navbar-brand" href="../../index.html"><h6>The Internet</h6></a>
+			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+			  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+				  <ul class="navbar-nav ml-auto">
+					  <li class="nav-item"><a href="../../index.html" class="nav-link">Home<span class="sr-only">(current)</span></a></li>
+					  <li class="nav-item active"><a href="../History.html" class="nav-link">The History</a></li>
+					  <li class="nav-item"><a href="../Works.html" class="nav-link">How it Works</a></li>
+					  <li class="nav-item"><a href="../Extra.html" class="nav-link">About</a></li>
+					  <li class="nav-item"><a href="../Extra.html#Contact" class="nav-link">Contact</a></li>					  
+				  </ul>
+			  </div>
+		</div>
+	  </nav>
+	  <!-- body code goes here -->
+	  <div class="hero-image" style="height: 45vh">
+		<div class="d-flex flex-column container text-center justify-content-around" style="height: 100%">
+			<div class="row">
+				<h1>Page Title</h1>
+			</div>				
+		</div>
+	  </div>
+	  <div id="Content" class="container" style="margin-top: 75px;">
+		<!--first section-->
+		<div class="row align-items-center how-it-works d-flex">
+		  <div class="col-2 text-center bottom d-inline-flex justify-content-center align-items-center">
+			<div class="circle font-weight-bold">60's</div>
+		  </div>
+		  <div class="col-6">
+			  <p>At the start of the 1960’s the term “Time Sharing” started to be used. Time Sharing is described as Terminals being connected to a very large server and the users would all access the data at the same time.</p>
+			  <p>Two years later the United State Government implemented the research for the infrastructure of the internet.</p>
+			  <p>During 1966 Bob Taylor had the idea of connecting multiple computers to one server so that he wouldn’t have to use multiple computers at the same time. He recrutied Lawrence Roberts to build this network since he had already done it on the local network at MIT. Larence built mini computers, so they would communicate for the larger computer, acting as secretaries.</p>
+			  <p>In 1968 Larry Robert sought out engineers to build the ARPA Net. The communication giants, like AT&#38;T and verizon, did not want to support their project because they knew it would hurt their company. Without the support of the communication giants, Larry reached out to multiple universities (UCLA, SRI, USCB, and Utah State) to build a local server that would eventually be linked to ARPA NET. A company by the name of Bolt Beranek and Newman Inc. (BBN) was tasked with linking the four servers together.</p>
+			  <p>At the start of 1969 the construction of their project had begun. Bob Taylor was given 1 million dollars to build the project. With the help of BBN, Taylor got right on it. In October UCLA was the first system to be implemented into ARPA Net.</p>
+			  <p>Although they ran into some trobles. The UCLA team had to rush their software development for the server and they had to define a common programming language for the computers to communicate. Leading to bugs in the software and a tedious development of a new langauge. The BBN Team had to figure out how to stop the packets from infinently looping, how to tell the packets where to stop, and how to stop the packets from overflowing. </p>
+			  <p>On September 1st, 1969 UCLA had recieved the hardware to link their server to the ARPA Net. At the end of 1969 all 4 sites were connected.</p>
+		  </div>
+		</div>
+		<!--path between 1-2-->
+		<div class="row timeline">
+		  <div class="col-2">
+			<div class="corner top-right"></div>
+		  </div>
+		  <div class="col-8">
+			<hr/>
+		  </div>
+		  <div class="col-2">
+			<div class="corner left-bottom"></div>
+		  </div>
+		</div>
+		<!--second section-->
+		<div class="row align-items-center justify-content-end how-it-works d-flex">
+		  <div class="col-6">
+			<p>During 1971, 18 different sites had been added to ARPA Net. Ranging from the west coast to the east coast. The ARPA Net, at the time, was only develop to transfer data files. Raymond Tomlison developed was he called “this killer app” to which we now call today emaling.</p>
+			<p>In 1972 ARPA Net became a Sci-Fi reality that many had fantazied about for years. A demonstration of ARPA Net was shown in Washington, D.C. to show the government what their investment had brought them.</p>
+			<p>Unintentionally the Internet had become abosorbed by other sectors of the technology market and was used for TV, Radio, News, and even Telephones. Since the Interent was build with an open-architecture people could improve it however they saw fit and comment wherever they wanted to.</p>
+			<p>A confrence was held to show off the network to industrial companies. Hosts on the ARPA Net would show off Games, Simulations, and Remote Job Entries. AT&#38;T execs came to see all the hype around ARPA Net, but to their advantage the network forze to due the high network usage.</p>
+			<p>With the development of a world wide network, people wanted to build local networks. The term LAN was used for this. LAN means Local Access Network and was used for computers to connect to one another in a specific location.</p>
+			<p>While communication was rising more and more people didn’t realize there was a determined language for the interent, so TCP/IP Protocols were developed. TCP Protocols are a way to describe the packets being sent so it would be less confusing for users.</p>
+		  </div>
+		  <div class="col-2 text-center full d-inline-flex justify-content-center align-items-center">
+			<div class="circle font-weight-bold">70's</div>
+		  </div>
+		</div>
+		<!--path between 2-3-->
+		<div class="row timeline">
+		  <div class="col-2">
+			<div class="corner right-bottom"></div>
+		  </div>
+		  <div class="col-8">
+			<hr/>
+		  </div>
+		  <div class="col-2">
+			<div class="corner top-left"></div>
+		  </div>
+		</div>
+		<!--third section-->
+		<div class="row align-items-center how-it-works d-flex">
+		  <div class="col-2 text-center full-left d-inline-flex justify-content-center align-items-center">
+			<div class="circle font-weight-bold">80's</div>
+		  </div>
+		  <div class="col-6">
+			<p>TCP &#38; IP Protocals became the universal standard for the Internet. If everyone didn’t use TCP & IP protocols then it would be much harder to communicate with other systems. ARPA was intially a research defense project that only a few colleges could have access to. Congress made it offical that the internet would become a public resource for everyone to use. The term “WWW” or “World Wide Web” was developed by Time Berners-Lee, he says that it would make it easier to “surf the web” and helps link sites to one another.</p>
+		  </div>
+		</div>
+		<!--path between 1-2-->
+		<div class="row timeline">
+		  <div class="col-2">
+			<div class="corner top-right"></div>
+		  </div>
+		  <div class="col-8">
+			<hr/>
+		  </div>
+		  <div class="col-2">
+			<div class="corner left-bottom"></div>
+		  </div>
+		</div>
+		<!--second section-->
+		<div class="row align-items-center justify-content-end how-it-works d-flex">
+		  <div class="col-6">
+			<p>In the early 1990’s only 50 webpages would end up on the Internet, but in the mid 1990’s the internet grew by 341,000%. Mosaic was invented to replace the graphicless browser Netscape. Mosaic offered graphics for users so they could add pictures to their sites. It completelely redefined the world of computing</p>
+		  </div>
+		  <div class="col-2 text-center top d-inline-flex justify-content-center align-items-center">
+			<div class="circle font-weight-bold">90's</div>
+		  </div>
+		</div>
+	  </div>
+	  <!-- Footer -->
+	  <footer>
+		  <div class="container">
+		  	<div class="row justify-content-center" style="padding: 10px 0">
+				<div class="col-2 d-flex justify-content-center"><a href=""><img src="../../Imgs/instagram.svg" alt="Instagram Icon" height="35px"></a></div>
+				<div class="col-2 d-flex justify-content-center"><a href=""><img src="../../Imgs/github.svg" alt="GitHub Icon" height="35px"></a></div>
+				<div class="col-2 d-flex justify-content-center"><a href=""><img src="../../Imgs/gmail.svg" alt="Gmail Icon" height="35px"></a></div> 
+			</div>
+		  	<div class="row justify-content-center">
+					<span>Ido Tanne @ 2020</span>
+			</div>
+		  </div>
+	  </footer>
+	  
+	  <!-- Javascript -->
+	  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	  <script src="js/jquery-3.3.1.min.js"></script>
+	  <!-- Include all compiled plugins (below), or include individual files as needed -->
+	  <script src="js/popper.min.js"></script>
+	  <script src="js/bootstrap-4.3.1.js"></script>
+  </body>
+</html>
