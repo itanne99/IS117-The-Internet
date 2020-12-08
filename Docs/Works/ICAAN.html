@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>The Internet</title>
+    <!-- Bootstrap -->
+	<link href="../../css/bootstrap-4.3.1.css" rel="stylesheet">
+	<!-- Internal CSS -->
+	<style>
+		.hero-image{
+			background: linear-gradient(0deg, rgba(44, 44, 44, 0.5), rgba(44, 44, 44, 0.5)), url("Imgs/earth.jpg"); 
+			background-position: center; 
+			background-repeat: no-repeat; 
+			background-size: cover;
+		}
+		#home{
+			color: white;
+		}
+	</style>
+	
+  </head>
+  <body>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+		<div class="container"> <a class="navbar-brand" href="../../index.html"><h6>The Internet</h6></a>
+			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+			  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+				  <ul class="navbar-nav ml-auto">
+					  <li class="nav-item"><a href="../../index.html" class="nav-link">Home<span class="sr-only">(current)</span></a></li>
+					  <li class="nav-item"><a href="../History.html" class="nav-link">The History</a></li>
+					  <li class="nav-item active"><a href="../Works.html" class="nav-link">How it Works</a></li>
+					  <li class="nav-item"><a href="../Extra.html" class="nav-link">About</a></li>
+					  <li class="nav-item"><a href="../Extra.html#Contact" class="nav-link">Contact</a></li>					  
+				  </ul>
+			  </div>
+		</div>
+	  </nav>
+	  <!-- body code goes here -->
+	  <div class="hero-image" style="height: 45vh">
+		<div class="d-flex flex-column container text-center justify-content-around" style="height: 100%">
+			<div class="row">
+				<h1>Page Title</h1>
+			</div>				
+		</div>
+	  </div>
+	  <div id="Content" class="container d-flex flex-column" style="margin-top: 75px;">
+	  	<div class="row">
+	  		<div class="col-12">
+				<p>ICANN maintains and administers unique identifiers across the world so users can communicate with one another or with a server. If ICANN did not work to maintain the DNS then we would not be able to globally scale our internet to the size that it is today. ICANN also holds community-driven policy making meetings, so the internet can have a say from each sector of the web. ICANN promotes Competiton and choice to keep the DNS Ecosystem thriving.</p>
+				
+				<h6>What does ICANN do?</h6>
+				They maintain the following systems:
+				<ol>
+					<li>The Domain Name System</li>
+					<li>Internet Protocol Address Allocation</li>
+					<li>The protocol parameter registry</li>
+					<li>Root Server Systems</li>
+					<li>Generic Top Level Domain Name System Managment</li>
+					<li>Country Code Top Level Domain Name DNS</li>
+					<li>Time Zone Database Management</li>
+				</ol>
+				
+				<p>ICANN works with the community to maintain security of users and stability of the interent. ICANN allows new companys to flurish while maintaining interoperability. ICANN makes sure that all users on the internet follow the policies developed by the community for the community</p>
+				
+				<h6>Who else is involved with ICANN?</h6>
+				<p>The supporting organizations work to manage addressing, country code name, and generic names.</p>
+				<p>The Advisory committees work at large, on a governmental level, and they work at the root server system and maintain security and stability.</p>
+				<p>The Technical Advisory Bodies comprise of the Technical Liason group and the Interenet Engineering Task Force.</p>
+				
+				<h6>Domain Name System (DNS)</h6>
+				<p>DNS, Domain Name System is a much simpler way for people to remember websites or servers through the use of words instead of numbers. You can actually look it up at this link (https://mxtoolbox.com/DnsLookup.aspx) if we search google.com we get this IP address 172.217.164.142, so even huge companies like google uses IPs. DNS domains are set up in a hierarchy system, so different servers handle the .com/.org/.net and distributes the workload among a different set of servers. DNS is an open system, so anyone can use it but because it has an open design it is is susceptible to cyber-attacks. This form of cyber-attack is called DNS Spoofing, it happens when a hacker enters a DNS server and takes over a domain so people will think the hacker’s “fake” website is the real one.</p>
+				<div class="row justify-content-between">
+					<div class="col-12">
+						<h6>How a DNS request works</h6>
+					</div>
+					<!-- Make this col-12 for small and xs devices-->
+					<div class="col-8">
+						<p>From a user's client, chrome is an example, when they input a domain name. The client first communicates with a DNS server and asks, "hey do you know how to get to www.examplesite.com?" The DNS may say, "Oh yea! The IP for that domain is 12.674.442.24" or it may say "Uhh... I'm not sure" then it will ask another DNS server the same thing and until a DNS server responds with "Oh yea I know the IP for that!" Then from there the DNS server will give you the IP and your computer will access the server through the IP provided.</p>
+					</div>
+					<!-- Make this col-12 for small and xs devices-->
+					<div class="col-4 align-items-center">
+						<img src="../../Imgs/ICANN_1.png" class="img-fluid" alt="Responsive image">
+					</div>
+				</div>
+			</div>
+	  	</div>
+		
+		
+	  </div>
+	  <!-- Footer -->
+	  <footer>
+		  <div class="container">
+		  	<div class="row justify-content-center" style="padding: 10px 0">
+				<div class="col-2 d-flex justify-content-center"><a href=""><img src="../../Imgs/instagram.svg" alt="Instagram Icon" height="35px"></a></div>
+				<div class="col-2 d-flex justify-content-center"><a href=""><img src="../../Imgs/github.svg" alt="GitHub Icon" height="35px"></a></div>
+				<div class="col-2 d-flex justify-content-center"><a href=""><img src="../../Imgs/gmail.svg" alt="Gmail Icon" height="35px"></a></div> 
+			</div>
+		  	<div class="row justify-content-center">
+					<span>Ido Tanne @ 2020</span>
+			</div>
+		  </div>
+	  </footer>
+	  
+	  <!-- Javascript -->
+	  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	  <script src="../../js/jquery-3.3.1.min.js"></script>
+	  <!-- Include all compiled plugins (below), or include individual files as needed -->
+	  <script src="../../js/popper.min.js"></script>
+	  <script src="../../js/bootstrap-4.3.1.js"></script>
+  </body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>The Internet</title>
+    <!-- Bootstrap -->
+	<link href="../../css/bootstrap-4.3.1.css" rel="stylesheet">
+	<!-- Internal CSS -->
+	<style>
+		.hero-image{
+			background: linear-gradient(0deg, rgba(44, 44, 44, 0.5), rgba(44, 44, 44, 0.5)), url("Imgs/earth.jpg"); 
+			background-position: center; 
+			background-repeat: no-repeat; 
+			background-size: cover;
+		}
+		#home{
+			color: white;
+		}
+	</style>
+	
+  </head>
+  <body>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+		<div class="container"> <a class="navbar-brand" href="../../index.html"><h6>The Internet</h6></a>
+			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+			  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+				  <ul class="navbar-nav ml-auto">
+					  <li class="nav-item"><a href="../../index.html" class="nav-link">Home<span class="sr-only">(current)</span></a></li>
+					  <li class="nav-item"><a href="../History.html" class="nav-link">The History</a></li>
+					  <li class="nav-item active"><a href="../Works.html" class="nav-link">How it Works</a></li>
+					  <li class="nav-item"><a href="../Extra.html" class="nav-link">About</a></li>
+					  <li class="nav-item"><a href="../Extra.html#Contact" class="nav-link">Contact</a></li>					  
+				  </ul>
+			  </div>
+		</div>
+	  </nav>
+	  <!-- body code goes here -->
+	  <div class="hero-image" style="height: 45vh">
+		<div class="d-flex flex-column container text-center justify-content-around" style="height: 100%">
+			<div class="row">
+				<h1>Page Title</h1>
+			</div>				
+		</div>
+	  </div>
+	  <div id="Content" class="container d-flex flex-column" style="margin-top: 75px;">
+	  	<div class="col-12">
+			<p>In the 1970s there was no standard form of communication over the internet, it was only till Vint Cerf and Bob Kahn developed the Internetworking protocol, and we know this today as the Internet. The Internet is just a design philosophy which is expressed in a set of protocols. A protocol is a well-known set of rules and standards used to communicate between machines. </p>
+			<p>The design philosophy has helped the internet grow even more by adapting and absorbing new communication technologies. Each device connect to the internet has a unique address, known as IP addresses, this is equivalent to a phone number or home address. So, no two devices will have the same IP at the same time. When we go into a website we are really just asking a computer to send us files for us to read. When we do ask for the files though we need to make sure to say where we are located so it knows where to send the files. Just like a mailing address, IP address are the same. The first two set of numbers are the network the ISP or network the device is located, then the subnetwork (which can be seen as the town), and finally the last set of numbers is the device itself.</p>
+			<p>This set of numbers is called IPv4 and there are 4 billion unique addresses, but as the population of the internet increases the number of addresses usable decreases so a new IP system is needed. We are slowly transitioning to IPv6, which works off a hex based system instead of a triple digit system. So, how many address do we get with IPv6? 340 Undecillion unique addresses, that’s 36 zeros AFTER 340.</p>
+			<p>How is data delivered to us reliably? We would think that the way it works is just connecting to the server and collecting the data we need, but this is wrong. It is impossible for 1 computer to handle all the information required at the same time. Data actually travels on the internet in a much less direct fashion. The data is sent through packets through a dynamic form of pathing. A majority of the data on the internet can be sent through packets, but there are limits. Routers help direct the packets to their destination. Routers will also find the cheapest way to get the packet to it’s needed location. Cheap isn’t meant by cost, but by time, politics, and relationships. Having options for paths makes the internet fault tolerant, which makes it reliable. TCP makes sure that the packets are sent and received correctly. TCP and routers are scalable, so they can work with 8 devices or 8 billion devices. The more router means the more reliable.</p>
+			<h6>How do all of the computers all across the world communicate with each other?</h6>
+			<p>Web Browsers, URL (uniform resource locator) let’s you access websites.</p>
+			<h6>What happens when you type a URL?</h6>
+			<p>Your computer starts talking to another computer, called a server, and in milliseconds the two computers are communicating with one another over HTTP (Hypertext Transfer Protocol) it’s the language used to communicate between web browsers and servers. A lot of the communication is the users computer running GET commands which is essentially the computer asking for files and the server deciding if the user can get it or not.</p>
+			<p>When communicating on normal HTTP we leave an open channel for hackers to steal our data and use it as they please, but some websites have a safety measure to ensure that a computer and server communicate on a secure channel, this is known as Transport Layer Security or HTTPS (Hyper Text Transfer Protocol Secure). Websites that use HTTPS are required to have digital certificates so when a user access the site they are informed that the site is the legit site and not some hacker trying to steal your data. When a user tries to access a site that has a fake certificate or there’s something off with the certificate, you’ll be informed that the certificate is invalid and/or not trusted.</p>
+		</div>	
+	  </div>
+	  <!-- Footer -->
+	  <footer>
+		  <div class="container">
+		  	<div class="row justify-content-center" style="padding: 10px 0">
+				<div class="col-2 d-flex justify-content-center"><a href=""><img src="../../Imgs/instagram.svg" alt="Instagram Icon" height="35px"></a></div>
+				<div class="col-2 d-flex justify-content-center"><a href=""><img src="../../Imgs/github.svg" alt="GitHub Icon" height="35px"></a></div>
+				<div class="col-2 d-flex justify-content-center"><a href=""><img src="../../Imgs/gmail.svg" alt="Gmail Icon" height="35px"></a></div> 
+			</div>
+		  	<div class="row justify-content-center">
+					<span>Ido Tanne @ 2020</span>
+			</div>
+		  </div>
+	  </footer>
+	  
+	  <!-- Javascript -->
+	  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	  <script src="../../js/jquery-3.3.1.min.js"></script>
+	  <!-- Include all compiled plugins (below), or include individual files as needed -->
+	  <script src="../../js/popper.min.js"></script>
+	  <script src="../../js/bootstrap-4.3.1.js"></script>
+  </body>
+</html>
