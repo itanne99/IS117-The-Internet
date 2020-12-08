@@ -14,6 +14,24 @@ footer{
 	border-top: thin solid #CCC;
 }
 
+.article-tab{
+	border-bottom: thin solid #CCC;
+	margin-bottom: 45px;
+}
+
+.article-tab:last-of-type{
+	border-bottom: none;
+}
+
+.article-tab a{
+	color: black;
+}
+
+.article-tab a:hover{
+	color: gray;
+	text-decoration: none;
+}
+
 /*!
  * Bootstrap v4.3.1 (https://getbootstrap.com/)
  * Copyright 2011-2019 The Bootstrap Authors
@@ -1576,7 +1594,8 @@ pre code {
   color: #495057;
   background-color: #fff;
   background-clip: padding-box;
-  border: 1px solid #ced4da;
+  border: 0px solid #ced4da;
+  border-bottom: 1px solid #ced4da;
   border-radius: 0.25rem;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
