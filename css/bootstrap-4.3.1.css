@@ -32,6 +32,15 @@ footer{
 	text-decoration: none;
 }
 
+#homeContent a{
+	color:black;
+}
+
+#homeContent a:hover{
+	color: gray;
+	text-decoration: none;
+}
+
 /*!
  * Bootstrap v4.3.1 (https://getbootstrap.com/)
  * Copyright 2011-2019 The Bootstrap Authors
@@ -3694,7 +3703,8 @@ input[type="submit"].btn-block, input[type="reset"].btn-block, input[type="butto
 }
 .navbar-dark .navbar-nav .show > .nav-link, .navbar-dark .navbar-nav .active > .nav-link, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .nav-link.active {
   color: #fff;
-  text-decoration: underline;
+  border-bottom: 3px solid#fff;
+  border-radius: 0px 0px 5px 5px;
 }
 .navbar-dark .navbar-toggler {
   color: rgba(255, 255, 255, 0.5);
