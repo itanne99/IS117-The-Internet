@@ -7,6 +7,8 @@
     <title>The Internet</title>
     <!-- Bootstrap -->
 	<link href="../css/bootstrap-4.3.1.css" rel="stylesheet">
+	<!-- Animate.css-->
+	<link rel="stylesheet" href="../node_modules/animate.css/animate.css"/>
 	<!-- Internal CSS -->
 	<style>
 		.hero-image{
@@ -23,7 +25,7 @@
 	
   </head>
   <body data-spy="scroll" data-target=".navbar">
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
 		<div class="container"> <a class="navbar-brand" href="../index.html"><h6>The Internet</h6></a>
 			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
 			  <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -38,8 +40,8 @@
 		</div>
 	  </nav>
 	  <!-- body code goes here -->
-	  <div id="home" class="hero-image" style="height: 25vh">
-		<div class="d-flex flex-column container text-center justify-content-around" style="height: 100%">
+	  <div id="About" class="hero-image" style="height: 25vh">
+		<div id="home" class="d-flex flex-column container text-center justify-content-around" style="height: 100%">
 			<div class="row">
 				<div class="col-12">
 					<h1>About &#38; Contact</h1>
@@ -47,7 +49,7 @@
 			</div>				
 		</div>
 	  </div>
-	  <div class="container d-flex flex-column" style="margin-top: 75px;">
+	  <div class="container d-flex flex-column animate__animated animate__slideInUp" style="margin-top: 75px;">
 		  <div class="col-12">
 		  	<h1 class="text-center">About the Page</h1>
 		  	<p>The Internet is an old and interesting place. This site will not only teach you about how the internet came into existance, but also how to surface and understand the web. This site was developed for a final project for IS117 and was designed and coded by Ido Tanne.</p>
@@ -56,7 +58,7 @@
 		  
 	  </div>
 	  
-	  <div id="Contact" class="container d-flex flex-column" style="margin-top: 75px; margin-bottom: 35px;">
+	  <div id="Contact" class="container d-flex flex-column animate__animated animate__slideInUp" style="margin-top: 75px; margin-bottom: 35px;">
 		  <div class="col-12">
 		  	<h1 class="text-center">Contact Me</h1>
 		  	<p>Want to get in touch? Fill out the form below to send me a message and I will get back to you as soon as possible!</p>

@@ -7,6 +7,8 @@
     <title>The Internet</title>
     <!-- Bootstrap -->
 	<link href="css/bootstrap-4.3.1.css" rel="stylesheet">
+	<!-- Animate.css-->
+	<link rel="stylesheet" href="node_modules/animate.css/animate.css"/>
 	<!-- Internal CSS -->
 	<style>
 		.hero-image{
@@ -18,12 +20,17 @@
 		#home{
 			color: white;
 		}
+		#home .animatedHover{
+			animation-play-state: paused;
+		}
 		
+		#home .animatedHover:hover {
+			animation-play-state: running;
+		}		
 	</style>
-	
   </head>
   <body>
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
 		<div class="container"> <a class="navbar-brand" href="#"><h6>The Internet</h6></a>
 			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
 			  <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -38,42 +45,45 @@
 		</div>
 	  </nav>
 	  <!-- body code goes here -->
-	  <div id="home" class="hero-image" style="height: 65vh">
-		<div class="d-flex flex-column container text-center justify-content-around" style="height: 100%">
-			<div class="row">
-				<div class="col-12"><h1>The Internet</h1></div>
-				<div class="col-12 text-center">
-					<h3>As the world spins round and round.</h3>
-					<h3>The Internet is what keeps us connected.</h3>
+	  
+      <div id="home" class="hero-image" style="height: 65vh">
+        <div class="d-flex flex-column container text-center justify-content-around" style="height: 100%">
+            <div class="row">
+                <div class="col-12"><h1>The Internet</h1></div>
+                <div class="col-12 text-center">
+                    <h3>As the world spins round and round.</h3>
+                    <h3>The Internet is what keeps us connected.</h3>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12"><h4>Learn More</h4></div>
+                <div class="col-12"><a href="#homeContent"><span><img src="Imgs/chevron-down.svg" alt="chevron-down" class="animatedHover animate__animated animate__shakeY animate__slower animate__infinite"></span></a></div>
+            </div>
+
+        </div>
+      </div>
+	  <main class="animate__animated animate__slideInUp">
+		  <div id="homeContent" class="container d-flex flex-column">
+			<div class="row justify-content-around" style="margin-top: 75px">
+				<div class="col-8">
+					<h3>History of the Interent</h3>
+					<p>ARPANET was started in the 1960’s and was developed for the government. It ended up being pulished to be used by all. Now a project for the people, by the people.</p>
+					<a href="Docs/History.html"><span><img src="Imgs/add.svg" alt="add sign" style="padding-right: 15px">Learn More</span></a>
+				</div>
+				<div class="col-3"><span><img class="img-fluid" src="Imgs/Notebook.svg" alt="Notebook"></span></div>
+			</div>
+			<div class="row justify-content-around" style="margin: 75px 0 75px 0">
+				<div class="col-3"><span><img class="img-fluid" src="Imgs/Reader.svg" alt="Reader"></span></div>
+				<div class="col-8">
+					<h3>How the Internet Works</h3>
+					<p>ARPANET was started in the 1960’s and was developed for the government. It ended up being pulished to be used by all. Now a project for the people, by the people.</p>
+					<a href="Docs/Works.html"><span><img src="Imgs/add.svg" alt="add sign" style="padding-right: 15px">Learn More</span></a>
 				</div>
 			</div>
-			
-			<div class="row">
-				<div class="col-12"><h4>Learn More</h4></div>
-				<div class="col-12"><a href="#homeContent"><span><img src="Imgs/chevron-down.svg" alt="chevron-down"></span></a></div>
-			</div>
-				
-		</div>
-	  </div>
-	  <div id="homeContent" class="container d-flex flex-column">
-	  	<div class="row justify-content-around" style="margin-top: 75px">
-			<div class="col-8">
-				<h3>History of the Interent</h3>
-				<p>ARPANET was started in the 1960’s and was developed for the government. It ended up being pulished to be used by all. Now a project for the people, by the people.</p>
-				<a href="Docs/History.html"><span><img src="Imgs/add.svg" alt="add sign">Learn More</span></a>
-			</div>
-			<div class="col-3"><span><img class="img-fluid" src="Imgs/Notebook.svg" alt="Notebook"></span></div>
-		</div>
-	  	<div class="row justify-content-around" style="margin: 75px 0 75px 0">
-			<div class="col-3"><span><img class="img-fluid" src="Imgs/Reader.svg" alt="Reader"></span></div>
-			<div class="col-8">
-				<h3>How the Internet Works</h3>
-				<p>ARPANET was started in the 1960’s and was developed for the government. It ended up being pulished to be used by all. Now a project for the people, by the people.</p>
-				<a href="Docs/Works.html"><span><img src="Imgs/add.svg" alt="add sign">Learn More</span></a>
-			</div>
-		</div>
-	  </div>
-	  
+		  </div>
+	  </main>
+	  	  
 	  <!-- Footer -->
 	  <footer>
 		  <div class="container">
@@ -94,5 +104,6 @@
 	  <!-- Include all compiled plugins (below), or include individual files as needed -->
 	  <script src="js/popper.min.js"></script>
 	  <script src="js/bootstrap-4.3.1.js"></script>
+	  
   </body>
 </html>

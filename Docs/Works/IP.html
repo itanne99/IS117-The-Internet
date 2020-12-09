@@ -7,6 +7,8 @@
     <title>The Internet</title>
     <!-- Bootstrap -->
 	<link href="../../css/bootstrap-4.3.1.css" rel="stylesheet">
+	<!-- Animate.css-->
+	<link rel="stylesheet" href="../../node_modules/animate.css/animate.css"/>
 	<!-- Internal CSS -->
 	<style>
 		.hero-image{
@@ -22,7 +24,7 @@
 	
   </head>
   <body>
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
 		<div class="container"> <a class="navbar-brand" href="../../index.html"><h6>The Internet</h6></a>
 			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
 			  <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -48,7 +50,7 @@
 			</div>				
 		</div>
 	  </div>
-	  <div id="Content" class="container d-flex flex-column" style="margin-top: 75px;">
+	  <div id="Content" class="container d-flex flex-column animate__animated animate__slideInRight" style="margin-top: 75px;">
 	  	<div class="col-12">
 			<p>In the 1970s there was no standard form of communication over the internet, it was only till Vint Cerf and Bob Kahn developed the Internetworking protocol, and we know this today as the Internet. The Internet is just a design philosophy which is expressed in a set of protocols. A protocol is a well-known set of rules and standards used to communicate between machines. </p>
 			<p>The design philosophy has helped the internet grow even more by adapting and absorbing new communication technologies. Each device connect to the internet has a unique address, known as IP addresses, this is equivalent to a phone number or home address. So, no two devices will have the same IP at the same time. When we go into a website we are really just asking a computer to send us files for us to read. When we do ask for the files though we need to make sure to say where we are located so it knows where to send the files. Just like a mailing address, IP address are the same. The first two set of numbers are the network the ISP or network the device is located, then the subnetwork (which can be seen as the town), and finally the last set of numbers is the device itself.</p>
